@@ -1,3 +1,8 @@
+# This fibonacci function utilizes the technique of memoization so that 
+# subsequent trees in the calculation that includes the same equation
+# will make use of the sum that is already stored in the dictionary.
+# This ensures that the time complexity aspect is efficient.
+
 def fib(n, memo={}):
 	if n in memo:
 		return memo[n]
